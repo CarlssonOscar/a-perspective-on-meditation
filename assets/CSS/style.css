@@ -82,3 +82,68 @@ body {
     justify-content: center;
     color: rgb(24, 2, 2);
 }
+
+.footer-box {
+    margin: 0 auto;
+    background-color: #45492a;
+    height: 300px;
+    width: 100%;
+}
+
+/* navigation in top left corner */
+.nav-bottom {
+    width 100% 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+/* removed line under text */
+.nav-bottom > a {
+    color: #f1efef;
+    padding: 20px;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.nav-bottom > a:hover {
+    color: #b83b3d;
+}
+
+/* header centered */ 
+.footer-box h2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #f1efef;
+    padding: 35px;
+}
+
+/* media logos in bottom right corner */
+#media-logos {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+
+/* remoed line under logos, displayed in row instead of column */
+#media-logos li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+#media-logos i {
+    font-size: 250%;
+    color: #f1efef;
+    padding-top: 20px;
+}
