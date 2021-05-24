@@ -64,3 +64,21 @@ body {
     height: auto;
     display: block;
 }
+
+/* width optimized for easy reading, padding for symmetry,  */
+.article-box {
+    color: rgb(24, 2, 2);
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 80px;
+    font-size: 1.2rem;
+}
+/* header centered */
+.article-box h2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(24, 2, 2);
+}
