@@ -89,7 +89,7 @@ body {
     color: rgb(24, 2, 2);
 }
 
-/* problem positioning elements with flex box (will not recognize the bottom of the footer), solved with padding */
+/* problem positioning elements with flex box (will not recognize the bottom of the footer), solved with padding (aware that this is so called smelly code, working on solution) */
 .footer-box {
     margin: 0 auto;
     background-color: #45492a;
