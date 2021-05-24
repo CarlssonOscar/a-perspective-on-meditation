@@ -55,7 +55,6 @@ body {
     justify-content: center;
     margin: 0 auto;
     padding-top: 80px;
-    padding-bottom: 80px;
 }
 
 /* responsive image */
@@ -88,7 +87,6 @@ body {
     transition: 2s;
 }
 
-
 /* width optimized for easy reading, padding for symmetry,  */
 .article-box {
     color: rgb(24, 2, 2);
@@ -101,6 +99,7 @@ body {
     padding-bottom: 80px;
     font-size: 1.2rem;
 }
+
 /* header centered */
 .article-box h2 {
     display: flex;
@@ -108,9 +107,31 @@ body {
     color: rgb(24, 2, 2);
 }
 
-article {
-    max-width: 800px !important;
+main {
+    color: rgb(24, 2, 2);
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 80px;
+    font-size: 1.3rem;
 }
+
+/* header centered */
+main h2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(24, 2, 2);
+}
+
+main h3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(24, 2, 2);
+}
+
 
 /* problem positioning elements with flex box (will not recognize the bottom of the footer), solved with padding (aware that this is so called smelly code, working on solution) */
 .footer-box {
@@ -191,7 +212,7 @@ article {
 
     .nav-box > a {
         padding: 5px;
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 

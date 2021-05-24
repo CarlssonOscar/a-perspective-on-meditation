@@ -27,7 +27,8 @@
 
     </nav>
 
-    <div id="carouselExampleSlidesOnly" class="carousel-fade" data-ride="carousel">
+<!-- changed carousel slide to carousel-fade -->
+    <div class="carousel-fade" data-ride="carousel" data-interval="3500">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="assets/images/hygiene.jpg" alt="First slide">
@@ -41,7 +42,8 @@
         </div>
     </div>
 
-    <article class="article-box">
+    <!-- If part of the grid bootstrap overrides the article-box class, through putting the content intended for the article-box in main this could be avoided -->
+    <main>
 
         <h2>Meditation Tips</h2>
 
@@ -50,7 +52,7 @@
             to. The hardest part is to get a regular practice going.
         </p>
 
-        <h2>Why do you want to meditate?</h2>
+        <h3>Why do you want to meditate?</h3>
 
         <p>
             The first tip is, figure out why you want to meditate. As with most things, we don’t stick to things that we
@@ -59,7 +61,7 @@
             day, we shower and brush our teeth. I guess my commitment do meditation is quite similar to those habits.
             But I think of it as mental instead of physical hygiene.</p>
 
-        <h2>Creating the habit.</h2>
+        <h3>Creating the habit.</h3>
 
         <p>
             As with most habits it’s a good idea to set up your life in a way where it’s hard not to do the habit. I
@@ -69,12 +71,12 @@
             that your supposed to be meditating, not scrolling through Instagram. My experience is also that my mind is
             calmer in the morning if I have not started the day looking at my cellphone. </p>
 
-        <h2>Write down what you need to do during the day, prior to starting. </h2>
+        <h3>Write</h3>
 
         <p>
-            This will make it easier to go deeper in to the meditation faster.</p>
+            Write down what you need to do during the day, prior to starting. This will make it easier to go deeper in to the meditation faster.</p>
 
-        <h2>You can manipulate your thoughts.</h2>
+        <h3>You can manipulate your thoughts.</h3>
 
         <p>
             Try stating ten or twenty things your truly thankful for in the begging of your meditation. You will notice
@@ -86,7 +88,7 @@
             idea to stop altogether with these things, it may make us ignorant, as will only sticking to one source of
             information. But limiting your consumption of it will likely make your thoughts more positive.</p>
 
-        <h2>You don’t have to sit down to meditate.</h2>
+        <h3>You don’t have to sit down to meditate.</h3>
 
         <P>
             I think that when most people think of meditation they think of a person sitting with calming music in the
@@ -94,7 +96,7 @@
             mind is obsessing over something. When I do I usually go “Hi brain, what you up to”, and the go back to
             focusing on my breath. Than my mind usually calms down.</P>
 
-        <h2>Listen to guided meditations.</h2>
+        <h3>Listen to guided meditations.</h3>
         
         <P>
             There are several people who hold guided meditations. People who know lots more than I do. My favorite is
@@ -105,7 +107,7 @@
             hate change, and will often try fooling you in to believing that your right, even when your wrong.
         </P>
 
-    </article>
+    </main>
 
     <footer class="footer-box">
 
@@ -147,9 +149,11 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
 </script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
 </script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
