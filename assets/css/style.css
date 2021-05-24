@@ -2,7 +2,7 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: #f1efef;
-    font-family: didot, helvetica, sans-serif;
+    font-family: didot, helvetica, sans-serif !important;
 }
 
 /* makes sure all content in elements doesn´t stayes within their bounderies */
@@ -71,12 +71,31 @@ body {
     display: block;
 }
 
+.carousel-item {
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-height: 900px;
+    display: block;
+}
+
+.carousel-inner > .carousel-item {
+    transition: 2s;
+}
+
+
 /* width optimized for easy reading, padding for symmetry,  */
 .article-box {
     color: rgb(24, 2, 2);
     max-width: 800px;
     height: auto;
     margin: 0 auto;
+    padding-top: 80px;
     padding-right: 5%;
     padding-left: 5%;
     padding-bottom: 80px;
@@ -87,6 +106,10 @@ body {
     display: flex;
     justify-content: center;
     color: rgb(24, 2, 2);
+}
+
+article {
+    max-width: 800px !important;
 }
 
 /* problem positioning elements with flex box (will not recognize the bottom of the footer), solved with padding (aware that this is so called smelly code, working on solution) */
@@ -174,8 +197,8 @@ body {
 
     .article-box {
         color: rgb(24, 2, 2);
-        max-width: 400px;
         height: auto;
+        max-width: 500px;
         margin: 0 auto;
         padding-right: 2.5%;
         padding-left: 2.5%;
