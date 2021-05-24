@@ -21,3 +21,27 @@ body {
     align-items: center;
     font-size: 1.2rem;
 }
+
+/* nav box centered in middle*/
+.nav-box {
+    width 100%;
+    height: 80px;
+    border-top: 1px solid rgb(5, 32, 3);
+    border-bottom: 1px solid rgb(5, 32, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* removed line under links */
+.nav-box > a {
+    color: rgb(5, 32, 3);
+    padding: 20px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-align: center;
+}
+/* buttons hover red */
+.nav-box>a:hover {
+    color: #b83b3d;
+}
