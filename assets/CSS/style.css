@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f1efef;
+    font-family: didot, helvetica, sans-serif;
+}
+
+/* makes sure all content in elements doesn´t stayes within their bounderies */
+.grid-wrapper {
+    display: grid;
+}
+
+/* header centerd in middle */
+.header-box {
+    color: rgb(5, 32, 3);
+    height: 120px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
