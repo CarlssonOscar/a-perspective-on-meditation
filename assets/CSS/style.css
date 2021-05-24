@@ -83,6 +83,7 @@ body {
     color: rgb(24, 2, 2);
 }
 
+/* problem positioning elements with flex box (will not recognize the bottom of the footer), solved with padding */
 .footer-box {
     margin: 0 auto;
     background-color: #45492a;
@@ -139,11 +140,79 @@ body {
     list-style-type: none;
     display: inline;
     padding: 20px;
-    padding-right: 30px;
 }
 
 #media-logos i {
     font-size: 250%;
     color: #f1efef;
     padding-top: 20px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .header-box {
+        color: rgb(5, 32, 3);
+        height: 120px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        font-size: 1.0rem;
+    }
+
+    .nav-box > a {
+        padding: 5px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .article-box {
+        color: rgb(24, 2, 2);
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+        padding-bottom: 80px;
+        font-size: 1.1rem;
+    }
+
+    .footer-box {
+        margin: 0 auto;
+        background-color: #45492a;
+        height: 300px;
+        width: 100%;
+    }
+
+    .nav-bottom {
+        width 100%;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    /* smaller font-size, improvements will move down at smaller screen-sizes */
+    .nav-bottom > a {
+        font-size: 1.2rem;
+        justify-content: center;
+    }
+
+    .footer-box h2 {
+        color: #f1efef;
+        padding-top: 22px;
+        padding-bottom: 35px;
+        left: 20px;
+        text-align: center;
+    }
+    /* logos slightly off-center */
+    #media-logos {
+        justify-content: center;
+        align-content: flex-end;
+        margin: 0 auto;
+    }
+
+    #media-logos i {
+        justify-content: center;
+        align-items: space-evenly;
+        text-align: center;
+    }
 }
