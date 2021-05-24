@@ -45,3 +45,22 @@ body {
 .nav-box>a:hover {
     color: #b83b3d;
 }
+
+/* image is centered, added padding for symmetry */
+.section-box {
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* responsive image */
+.section-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
