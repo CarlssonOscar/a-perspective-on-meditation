@@ -78,8 +78,18 @@ body {
     display: block;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
 
-
+.gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 10px solid #f1efef;
+}
 
 /* width optimized for easy reading, padding for symmetry,  */
 .article-box {
@@ -110,11 +120,11 @@ body {
 }
 
 
-/* problem positioning elements with flex box (will not recognize the bottom of the footer), solved with padding (aware that this is so called smelly code, working on solution) */
+/* bug, footerbox expands because of images in tips.html*/
 .footer-box {
     margin: 0 auto;
     background-color: #45492a;
-    height: 100%;
+    max-height: 100%;
     width: 100%;
 }
 
@@ -209,6 +219,7 @@ body {
         background-color: #45492a;
         height: 100%;
         width: 100%;
+        margin-bottom: 0;
     }
 
     .nav-bottom {
@@ -241,3 +252,8 @@ body {
         text-align: center;
     }
 }
+
+
+
+  
+  
