@@ -113,7 +113,7 @@ textarea {
 
 /* provide symmetry between forename and surname */
 .surname {
-    padding-right: 6px;
+    padding-right: 5.5px;
 }
 
 .submit {
@@ -153,6 +153,13 @@ textarea {
 
 .article-box p {
     margin-bottom: 20px;
+}
+
+.map-header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .map-wrapper {
@@ -230,6 +237,43 @@ textarea {
     padding-right: 35px;
 }
 
+/* 13 inch laptop width */
+@media screen and (max-width: 1280px) {
+
+    .section-box {
+        max-width: 800px;
+        padding: 40px 40px;
+    }
+
+    .gallery img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .map-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .map {
+        height: 400px   
+    }
+
+    .form {
+        padding-bottom: 20px;
+    }
+
+    .section-box {
+        padding-bottom: 20px;
+    }
+
+    .article-box {
+        padding-top: 20px;
+    }
+
+}
+
+
+
 @media screen and (max-width: 600px) {
 
     .header-box {
@@ -250,6 +294,10 @@ textarea {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
+    .form {
+        padding-top: 20px;
+    }
     
 
     .article-box {
@@ -259,10 +307,6 @@ textarea {
         padding-left: 2.5%;
         padding-bottom: 40px;
         font-size: 1rem;
-    }
-
-    .map {
-        height: 400px;
     }
 
     .footer-box {
@@ -279,7 +323,7 @@ textarea {
     }
 
     /* smaller font-size, improvements will move down at smaller screen-sizes */
-    .nav-bottom>a {
+    .nav-bottom a {
         font-size: 1.2rem;
         justify-content: center;
     }
@@ -297,7 +341,7 @@ textarea {
         margin: 0 auto;
     }
 
-    /* space-evenly will allow  */
+    /* space-evenly will allow the logos to apear more centered, still not perfect */
     #media-logos i {
         justify-content: center;
         align-items: space-evenly;
@@ -322,11 +366,6 @@ textarea {
         padding: 5px;
         font-size: 1.0rem;
         height: 40px;
-    }
-
-    .gallery img {
-        width: 280px;
-        height: 280px;
     }
 
     .map {
