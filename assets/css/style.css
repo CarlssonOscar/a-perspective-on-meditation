@@ -86,6 +86,26 @@ body {
     display: block;
 }
 
+.form {
+    margin: 0 auto;
+    padding: 80px 80px;
+}
+.form input, textarea {
+    margin-bottom: 10px;
+    background-color: #45492a;
+    color: #f1efef;
+}
+
+/* provide symmetry between forename and surname */
+.surname {
+    padding-right: 6px;
+}
+
+.submit {
+    margin-top: 10px;
+}
+
+
 /* width optimized for easy reading, padding for symmetry,  */
 .article-box {
     color: rgb(24, 2, 2);
