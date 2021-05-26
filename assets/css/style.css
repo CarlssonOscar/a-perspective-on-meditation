@@ -10,9 +10,10 @@ body {
     font-family: didot, helvetica, sans-serif;
 }
 
-/* makes sure all content in elements doesn´t stayes within their bounderies */
+/* makes sure all content in elements stayes within their bounderies */
 .grid-wrapper {
     display: grid;
+    grid-template-rows: auto;
 }
 
 /* header centerd in middle */
@@ -39,12 +40,15 @@ body {
 }
 
 /* removed line under links */
-.nav-box>a {
+.nav-box a {
     color: rgb(5, 32, 3);
     padding: 20px;
     font-size: 1.4rem;
     text-decoration: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* buttons hover red */
@@ -136,6 +140,7 @@ textarea {
     display: flex;
     justify-content: center;
     color: rgb(24, 2, 2);
+    margin-bottom: 20px;
 }
 
 
@@ -143,6 +148,11 @@ textarea {
     display: flex;
     justify-content: center;
     color: rgb(24, 2, 2);
+    margin-bottom: 20px;
+}
+
+.article-box p {
+    margin-bottom: 20px;
 }
 
 .map-wrapper {
@@ -174,7 +184,7 @@ textarea {
 }
 
 /* removed line under text */
-.nav-bottom>a {
+.nav-bottom a {
     color: #f1efef;
     padding: 20px;
     font-size: 1.4rem;
@@ -194,7 +204,7 @@ textarea {
     align-items: center;
     font-size: 1.6rem;
     color: #f1efef;
-    padding: 35px;
+    padding: 35px 35px;
 }
 
 /* media logos in bottom right corner */
@@ -223,8 +233,7 @@ textarea {
 @media screen and (max-width: 600px) {
 
     .header-box {
-        color: rgb(5, 32, 3);
-        width: 100%;
+        height: 80px;
         margin: 0 auto;
         justify-content: center;
         font-size: 1.0rem;
@@ -234,15 +243,26 @@ textarea {
         padding: 5px;
         font-size: 1.2rem;
         text-align: center;
+        height: 60px;
     }
+     
+    .section-box {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
 
     .article-box {
         color: rgb(24, 2, 2);
         height: auto;
         padding-right: 2.5%;
         padding-left: 2.5%;
-        padding-bottom: 80px;
-        font-size: 1.1rem;
+        padding-bottom: 40px;
+        font-size: 1rem;
+    }
+
+    .map {
+        height: 400px;
     }
 
     .footer-box {
@@ -254,8 +274,7 @@ textarea {
     }
 
     .nav-bottom {
-        width 100%;
-        padding: 20px;
+        padding: 20px 20px;
         text-align: center;
     }
 
@@ -267,7 +286,7 @@ textarea {
 
     .footer-box h2 {
         color: #f1efef;
-        padding: 40px;
+        padding: 40px 40px;
         text-align: center;
     }
 
@@ -285,6 +304,58 @@ textarea {
         text-align: center;
         padding-top: 20px;
         padding-right: 0;
+        padding-left: 0;
     }
 
+}
+
+@media screen and (max-width: 430px) {
+
+    .header-box {
+        height: 60px;
+        margin: 0 auto;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+
+    .nav-box {
+        padding: 5px;
+        font-size: 1.0rem;
+        height: 40px;
+    }
+
+    .gallery img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .map {
+        height: 300px;
+    }
+    
+    .article-box {
+        padding: 20px 20px;
+    }
+
+    .section-box {
+        padding: 20px 20px;
+    }
+
+    .nav-bottom {
+        font-size: 1rem;
+    }
+
+    .footer-box h2 {
+        color: #f1efef;
+        padding: 20px 20px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    #media-logos i {
+        font-size: 200%;
+        color: #f1efef;
+        padding-top: 10px;
+        padding-right: 15px;
+    }
 }
