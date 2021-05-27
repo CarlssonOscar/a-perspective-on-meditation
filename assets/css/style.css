@@ -24,7 +24,7 @@ body {
 
 /* nav box centered in middle*/
 .nav-box {
-    width 100%;
+    width: 100%;
     height: 80px;
     border-top: 1px solid rgb(5, 32, 3);
     border-bottom: 1px solid rgb(5, 32, 3);
@@ -124,7 +124,7 @@ textarea {
     max-width: 800px;
     height: auto;
     margin: 0 auto;
-    padding: 80px 80px;
+    padding: 40px 80px;
     padding-right: 5%;
     padding-left: 5%;
     font-size: 1.2rem;
@@ -177,7 +177,8 @@ textarea {
 
 /* navigation in top left corner */
 .nav-bottom {
-    width 100% display: flex;
+    width 100% 
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
@@ -308,23 +309,21 @@ textarea {
 
     .footer-box h2 {
         color: #f1efef;
-        padding: 40px 40px;
+        padding: 50px 50px;
         text-align: center;
     }
 
     /* logos slightly off-center */
     #media-logos {
         justify-content: center;
-        align-content: flex-end;
+        align-content: space-around;
         margin: 0 auto;
     }
 
     /* space-evenly will allow the logos to apear more centered, still not perfect */
     #media-logos i {
         justify-content: center;
-        align-items: space-evenly;
-        text-align: center;
-        padding-top: 20px 0 0 0;
+        padding-bottom: 10px;
     }
 
 }
