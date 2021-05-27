@@ -289,8 +289,6 @@ textarea {
     }
 
     .article-box {
-        padding-right: 2.5%;
-        padding-left: 2.5%;
         font-size: 1rem;
         padding-top: 20px;
     }
@@ -302,7 +300,6 @@ textarea {
     .map-wrapper {
         padding: 20px 20px;
     }
-
 
     .nav-bottom {
         padding: 20px 20px;
