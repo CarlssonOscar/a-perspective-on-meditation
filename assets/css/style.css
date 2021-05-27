@@ -124,7 +124,7 @@ textarea {
     max-width: 800px;
     height: auto;
     margin: 0 auto;
-    padding-top: 80px;
+    padding: 80px 80px;
     padding-right: 5%;
     padding-left: 5%;
     font-size: 1.2rem;
@@ -237,16 +237,22 @@ textarea {
 
     .section-box {
         max-width: 780px;
-        padding: 40px 40px;
+        padding-top: 20px;
     }
 
     .gallery {
-        padding-top 20px;
+        padding-top: 20px;
+        padding-bottom: 0;
     }
 
     .gallery img {
         width: 240px;
         height: 240px;
+    }
+
+    .article-box {
+        padding-top: 0;
+        padding-bottom: 20px;
     }
 
     .map-wrapper {
@@ -258,14 +264,6 @@ textarea {
     }
 
     .form {
-        padding: 20px 20px;
-    }
-
-    .section-box {
-        padding: 20px 0;
-    }
-
-    .article-box {
         padding: 20px 20px;
     }
 
@@ -281,7 +279,7 @@ textarea {
         font-size: 1.0rem;
     }
 
-    .nav-box>a {
+    .nav-box a {
         padding: 5px;
         font-size: 1.2rem;
         text-align: center;
@@ -290,11 +288,7 @@ textarea {
 
     .article-box {
         font-size: 1rem;
-        padding-top: 20px;
-    }
-
-    .gallery {
-        padding-bottom: 20px;
+        padding-top: 0;
     }
 
     .map-wrapper {
@@ -330,9 +324,7 @@ textarea {
         justify-content: center;
         align-items: space-evenly;
         text-align: center;
-        padding-top: 20px;
-        padding-right: 0;
-        padding-left: 0;
+        padding-top: 20px 0 0 0;
     }
 
 }
@@ -371,7 +363,7 @@ textarea {
     #media-logos i {
         font-size: 200%;
         color: #f1efef;
-        padding-top: 10px;
-        padding-right: 15px;
+        padding: 10px 0 0 0;
+        
     }
 }
