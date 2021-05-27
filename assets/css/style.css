@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     width: 100%;
     margin: 0 auto;
@@ -10,10 +5,9 @@ body {
     font-family: didot, helvetica, sans-serif;
 }
 
-/* makes sure all content in elements stayes within their bounderies */
+
 .grid-wrapper {
     display: grid;
-    grid-template-rows: auto;
 }
 
 /* header centerd in middle */
@@ -51,7 +45,7 @@ body {
     align-items: center;
 }
 
-/* buttons hover red */
+/* navigation buttons hover red */
 .nav-box>a:hover {
     color: #b83b3d;
 }
@@ -74,12 +68,14 @@ body {
     display: block;
 }
 
+/* responsive video */
 .section-box video {
     width: 100%;
     height: auto;
     display: block;
 }
 
+/* gallery images will change based on screen width */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -100,6 +96,7 @@ body {
     padding: 80px 80px;
 }
 
+/* background color in form changed and margin bottom provides space between sections */
 .form input,
 textarea {
     margin-bottom: 10px;
@@ -130,10 +127,8 @@ textarea {
     padding-top: 80px;
     padding-right: 5%;
     padding-left: 5%;
-    padding-bottom: 80px;
     font-size: 1.2rem;
 }
-
 
 /* header centered */
 .article-box h2 {
@@ -142,7 +137,6 @@ textarea {
     color: rgb(24, 2, 2);
     margin-bottom: 20px;
 }
-
 
 .article-box h3 {
     display: flex;
@@ -156,6 +150,7 @@ textarea {
 }
 
 .map-header {
+    color: rgb(24, 2, 2);
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -198,7 +193,7 @@ textarea {
     text-decoration: none;
 }
 
-.nav-bottom>a:hover {
+.nav-bottom a:hover {
     color: #b83b3d;
 }
 
@@ -237,12 +232,16 @@ textarea {
     padding-right: 35px;
 }
 
-/* 13 inch laptop width */
+/* adpated for 13 inch laptop width */
 @media screen and (max-width: 1280px) {
 
     .section-box {
-        max-width: 800px;
+        max-width: 780px;
         padding: 40px 40px;
+    }
+
+    .gallery {
+        padding-top 20px;
     }
 
     .gallery img {
@@ -255,25 +254,24 @@ textarea {
     }
 
     .map {
-        height: 400px   
+        height: 400px
     }
 
     .form {
-        padding-bottom: 20px;
+        padding: 20px 20px;
     }
 
     .section-box {
-        padding-bottom: 20px;
+        padding: 20px 0;
     }
 
     .article-box {
-        padding-top: 20px;
+        padding: 20px 20px;
     }
 
 }
 
-
-
+/* adapted for common tablet width */
 @media screen and (max-width: 600px) {
 
     .header-box {
@@ -289,33 +287,22 @@ textarea {
         text-align: center;
         height: 60px;
     }
-     
-    .section-box {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .form {
-        padding-top: 20px;
-    }
-    
 
     .article-box {
-        color: rgb(24, 2, 2);
-        height: auto;
         padding-right: 2.5%;
         padding-left: 2.5%;
-        padding-bottom: 40px;
         font-size: 1rem;
+        padding-top: 20px;
     }
 
-    .footer-box {
-        margin: 0 auto;
-        background-color: #45492a;
-        height: 100%;
-        width: 100%;
-        margin-bottom: 0;
+    .gallery {
+        padding-bottom: 20px;
     }
+
+    .map-wrapper {
+        padding: 20px 20px;
+    }
+
 
     .nav-bottom {
         padding: 20px 20px;
@@ -353,6 +340,7 @@ textarea {
 
 }
 
+/* adapted for mobile screens */
 @media screen and (max-width: 430px) {
 
     .header-box {
@@ -370,14 +358,6 @@ textarea {
 
     .map {
         height: 300px;
-    }
-    
-    .article-box {
-        padding: 20px 20px;
-    }
-
-    .section-box {
-        padding: 20px 20px;
     }
 
     .nav-bottom {
