@@ -78,9 +78,8 @@ body {
 /* gallery images will change based on screen width */
 .gallery {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     flex: 1;
-    overflow: hidden;
 }
 
 .gallery img {
@@ -99,6 +98,7 @@ body {
 /* background color in form changed and margin bottom provides space between sections */
 .form input,
 textarea {
+    font-family: didot, helvetica, sans-serif;
     margin-bottom: 10px;
     background-color: #45492a;
     color: #f1efef
