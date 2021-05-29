@@ -124,9 +124,7 @@ textarea {
     max-width: 800px;
     height: auto;
     margin: 0 auto;
-    padding: 40px 80px;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding: 40px 5% 80px 5%;
     font-size: 1.2rem;
 }
 
@@ -155,6 +153,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 5% 0 5%;
 }
 
 .map-wrapper {
@@ -284,6 +283,7 @@ textarea {
         padding: 5px;
         font-size: 1.2rem;
         text-align: center;
+        align-content: space-evenly;
         height: 60px;
     }
 
@@ -316,14 +316,16 @@ textarea {
     /* logos slightly off-center */
     #media-logos {
         justify-content: center;
-        align-content: space-around;
         margin: 0 auto;
     }
 
-    /* space-evenly will allow the logos to apear more centered, still not perfect */
+    /* space-evenly will allow the logos to apear more centered, centered through position relative */
     #media-logos i {
         justify-content: center;
         padding-bottom: 10px;
+        align-content: space-evenly;
+        position: relative;
+        right: 3px;
     }
 
 }
@@ -363,6 +365,8 @@ textarea {
         font-size: 200%;
         color: #f1efef;
         padding: 10px 0 0 0;
+        position: relative;
+        right: 18px;
         
     }
 }
