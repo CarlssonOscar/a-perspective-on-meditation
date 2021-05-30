@@ -5,12 +5,12 @@ body {
     font-family: didot, helvetica, sans-serif;
 }
 
-
+/* Ended up not using grid because of the limited time to learn it. But the site works differently without display:grid, since some of the sites elements behave as they do due to the deafult for grid is row  it won't be removed */
 .grid-wrapper {
     display: grid;
 }
 
-/* header centerd in middle */
+/* Header centerd in middle */
 .header-box {
     color: rgb(5, 32, 3);
     height: 120px;
@@ -22,7 +22,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* nav box centered in middle*/
+/* Nav box centered in middle*/
 .nav-box {
     width: 100%;
     height: 80px;
@@ -33,7 +33,7 @@ body {
     align-items: center;
 }
 
-/* removed line under links */
+/* Nav elements centered, removed line under links */
 .nav-box a {
     color: rgb(5, 32, 3);
     padding: 20px;
@@ -45,12 +45,12 @@ body {
     align-items: center;
 }
 
-/* navigation buttons hover red */
-.nav-box>a:hover {
+/* Navigation buttons hover red */
+.nav-box a:hover {
     color: #b83b3d;
 }
 
-/* image is centered, added padding for symmetry */
+/* Image is centered, added padding for symmetry, works in conjuction with img and video (below) */
 .section-box {
     max-width: 1200px;
     display: flex;
@@ -61,21 +61,21 @@ body {
     padding-top: 80px;
 }
 
-/* responsive image */
+/* Responsive image */
 .section-box img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* responsive video */
+/* Responsive video */
 .section-box video {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* gallery images will change based on screen width */
+/* Gallery images will change formation based on screen width */
 .gallery {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -90,12 +90,13 @@ body {
     display: block;
 }
 
+/* Padding for symmetry */
 .form {
     margin: 0 auto;
     padding: 80px 80px;
 }
 
-/* background color in form changed and margin bottom provides space between sections */
+/* Background color in form changed for default white, font added to ensure Didot is used through out site and margin bottom provides space between form elements */
 .form input,
 textarea {
     font-family: didot, helvetica, sans-serif;
@@ -108,17 +109,18 @@ textarea {
     width: 100%;
 }
 
-/* provide symmetry between forename and surname */
+/* Provide symmetry between forename and surname */
 .surname {
     padding-right: 5.5px;
 }
 
+/* Padding necessary to make all form elements have the same space between each other */
 .submit {
     margin-top: 10px;
 }
 
 
-/* width optimized for easy reading, padding for symmetry,  */
+/* Width optimized for easy reading, padding for symmetry  */
 .article-box {
     color: rgb(24, 2, 2);
     max-width: 800px;
@@ -128,7 +130,7 @@ textarea {
     font-size: 1.2rem;
 }
 
-/* header centered */
+/* Header centered */
 .article-box h2 {
     display: flex;
     justify-content: center;
@@ -136,6 +138,8 @@ textarea {
     margin-bottom: 20px;
 }
 
+
+/* Header centered */
 .article-box h3 {
     display: flex;
     justify-content: center;
@@ -143,10 +147,14 @@ textarea {
     margin-bottom: 20px;
 }
 
+
+/* Provides space between paragraphs */
 .article-box p {
     margin-bottom: 20px;
 }
 
+
+/* Header centered */
 .map-header {
     color: rgb(24, 2, 2);
     margin: 0 auto;
@@ -156,6 +164,8 @@ textarea {
     padding: 0 5% 0 5%;
 }
 
+
+/* Padding for symmetry on large screen-sizes */
 .map-wrapper {
     border: 2px solid rgb(24, 2, 2);
     padding-bottom: 80px;
@@ -166,7 +176,6 @@ textarea {
     height: 600px;
 }
 
-/* bug, footerbox expands because of images in tips.html*/
 .footer-box {
     margin: 0 auto;
     background-color: #45492a;
@@ -174,7 +183,7 @@ textarea {
     width: 100%;
 }
 
-/* navigation in top left corner */
+/* Navigation in top left corner */
 .nav-bottom {
     width 100% 
     display: flex;
@@ -185,7 +194,7 @@ textarea {
     margin: 0 auto;
 }
 
-/* removed line under text */
+/* Removed line under text */
 .nav-bottom a {
     color: #f1efef;
     padding: 20px;
@@ -197,7 +206,7 @@ textarea {
     color: #b83b3d;
 }
 
-/* header centered */
+/* Header centered */
 .footer-box h2 {
     margin: 0 auto;
     display: flex;
@@ -209,7 +218,7 @@ textarea {
     padding: 35px 35px;
 }
 
-/* media logos in bottom right corner */
+/* Media logos in bottom right corner */
 #media-logos {
     display: flex;
     justify-content: flex-end;
@@ -218,7 +227,7 @@ textarea {
     margin: 0 auto;
 }
 
-/* removed line under logos, displayed in row instead of column */
+/* Removed line under logos, displayed in row instead of column through inline */
 #media-logos li {
     list-style-type: none;
     display: inline;
@@ -232,7 +241,7 @@ textarea {
     padding-right: 35px;
 }
 
-/* adpated for 13 inch laptop width */
+/* Adpated for 13 inch laptop width */
 @media screen and (max-width: 1280px) {
 
     .section-box {
@@ -269,9 +278,11 @@ textarea {
 
 }
 
-/* adapted for common tablet width */
+/* Adapted for common tablet width */
 @media screen and (max-width: 600px) {
 
+
+/* Smaller header */
     .header-box {
         height: 80px;
         margin: 0 auto;
@@ -279,6 +290,7 @@ textarea {
         font-size: 1.0rem;
     }
 
+    /* On larger screns sizes nav and logos are displayed in upper left and bottom right corner. On smaller screns-sizes the are centered. Smaller font-size than on smaller screens-sizes */
     .nav-box a {
         padding: 5px;
         font-size: 1.2rem;
@@ -301,7 +313,7 @@ textarea {
         text-align: center;
     }
 
-    /* smaller font-size, improvements will move down at smaller screen-sizes */
+    /* Smaller font-size than on larger screens */
     .nav-bottom a {
         font-size: 1.2rem;
         justify-content: center;
@@ -313,13 +325,13 @@ textarea {
         text-align: center;
     }
 
-    /* logos slightly off-center */
+    /* Logos slightly off-center */
     #media-logos {
         justify-content: center;
         margin: 0 auto;
     }
 
-    /* space-evenly will allow the logos to apear more centered, centered through position relative */
+    /* Space-evenly will allow the logos to apear more centered, entirely centered through position relative */
     #media-logos i {
         justify-content: center;
         padding-bottom: 10px;
@@ -330,7 +342,7 @@ textarea {
 
 }
 
-/* adapted for mobile screens */
+/* Adapted for mobile screens */
 @media screen and (max-width: 430px) {
 
     .header-box {
@@ -366,7 +378,6 @@ textarea {
         color: #f1efef;
         padding: 10px 0 0 0;
         position: relative;
-        right: 18px;
-        
+        right: 18px;  
     }
 }
