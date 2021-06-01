@@ -4,12 +4,10 @@ body {
     background-color: #f1efef;
     font-family: didot, helvetica, sans-serif;
 }
-
 /* Ended up not using grid because of the limited time to learn it. But the site works differently without display:grid, since some of the sites elements behave as they do due to the deafult for grid is row  it won't be removed */
 .grid-wrapper {
     display: grid;
 }
-
 /* Header centerd in middle */
 .header-box {
     color: rgb(5, 32, 3);
@@ -21,7 +19,6 @@ body {
     align-items: center;
     font-size: 1.2rem;
 }
-
 /* Nav box centered in middle*/
 .nav-box {
     width: 100%;
@@ -32,7 +29,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 /* Nav elements centered, removed line under links */
 .nav-box a {
     color: rgb(5, 32, 3);
@@ -44,12 +40,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 /* Navigation buttons hover red */
 .nav-box a:hover {
     color: #b83b3d;
 }
-
 /* Image is centered, added padding for symmetry, works in conjuction with img and video (below) */
 .section-box {
     max-width: 1200px;
@@ -60,28 +54,24 @@ body {
     margin: 0 auto;
     padding-top: 80px;
 }
-
 /* Responsive image */
 .section-box img {
     width: 100%;
     height: auto;
     display: block;
 }
-
 /* Responsive video */
 .section-box video {
     width: 100%;
     height: auto;
     display: block;
 }
-
 /* Gallery images will change formation based on screen width */
 .gallery {
     display: flex;
     flex-wrap: wrap-reverse;
     flex: 1;
 }
-
 .gallery img {
     width: 350px;
     height: 350px;
@@ -89,14 +79,12 @@ body {
     border: 10px solid #f1efef;
     display: block;
 }
-
 /* Padding for symmetry */
 .form {
     margin: 0 auto;
     padding: 80px 80px;
 }
-
-/* Background color in form changed for default white, font added to ensure Didot is used through out site and margin bottom provides space between form elements */
+/* Background color in form changed from default white, font added to ensure Didot is used through out site and margin bottom provides space between form elements */
 .form input,
 textarea {
     font-family: didot, helvetica, sans-serif;
@@ -104,22 +92,17 @@ textarea {
     background-color: #45492a;
     color: #f1efef
 }
-
 .form textarea {
     width: 100%;
 }
-
 /* Provide symmetry between forename and surname */
 .surname {
     padding-right: 5.5px;
 }
-
 /* Padding necessary to make all form elements have the same space between each other */
 .submit {
     margin-top: 10px;
 }
-
-
 /* Width optimized for easy reading, padding for symmetry  */
 .article-box {
     color: rgb(24, 2, 2);
@@ -129,7 +112,6 @@ textarea {
     padding: 40px 5% 80px 5%;
     font-size: 1.2rem;
 }
-
 /* Header centered */
 .article-box h2 {
     display: flex;
@@ -137,8 +119,6 @@ textarea {
     color: rgb(24, 2, 2);
     margin-bottom: 20px;
 }
-
-
 /* Header centered */
 .article-box h3 {
     display: flex;
@@ -146,14 +126,10 @@ textarea {
     color: rgb(24, 2, 2);
     margin-bottom: 20px;
 }
-
-
 /* Provides space between paragraphs */
 .article-box p {
     margin-bottom: 20px;
 }
-
-
 /* Header centered */
 .map-header {
     color: rgb(24, 2, 2);
@@ -163,29 +139,23 @@ textarea {
     align-items: center;
     padding: 0 5% 0 5%;
 }
-
-
 /* Padding for symmetry on large screen-sizes */
 .map-wrapper {
     border: 2px solid rgb(24, 2, 2);
     padding-bottom: 80px;
 }
-
 .map {
     width: 100%;
     height: 600px;
 }
-
 .footer-box {
     margin: 0 auto;
     background-color: #45492a;
     max-height: 100%;
     width: 100%;
 }
-
 /* Navigation in top left corner */
 .nav-bottom {
-    width 100% 
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -193,7 +163,6 @@ textarea {
     padding: 20px;
     margin: 0 auto;
 }
-
 /* Removed line under text */
 .nav-bottom a {
     color: #f1efef;
@@ -201,11 +170,9 @@ textarea {
     font-size: 1.4rem;
     text-decoration: none;
 }
-
 .nav-bottom a:hover {
     color: #b83b3d;
 }
-
 /* Header centered */
 .footer-box h2 {
     margin: 0 auto;
@@ -217,71 +184,57 @@ textarea {
     color: #f1efef;
     padding: 35px 35px;
 }
-
 /* Media logos in bottom right corner */
-#media-logos {
+.media-logos {
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
     align-items: flex-end;
     margin: 0 auto;
 }
-
 /* Removed line under logos, displayed in row instead of column through inline */
-#media-logos li {
+.media-logos li {
     list-style-type: none;
     display: inline;
     padding: 20px;
 }
-
-#media-logos i {
+.media-logos i {
     font-size: 250%;
     color: #f1efef;
     padding-top: 20px;
     padding-right: 35px;
 }
-
 /* Adpated for 13 inch laptop width */
 @media screen and (max-width: 1280px) {
-
     .section-box {
         max-width: 780px;
         padding-top: 20px;
     }
-
     .gallery {
         padding-top: 20px;
         padding-bottom: 0;
     }
-
     .gallery img {
         width: 240px;
         height: 240px;
     }
-
     .article-box {
         padding-top: 0;
         padding-bottom: 20px;
     }
-
     .map-wrapper {
         padding-bottom: 40px;
     }
-
     .map {
         height: 400px
     }
-
     .form {
         padding: 20px 20px;
     }
-
 }
 
 /* Adapted for common tablet width */
 @media screen and (max-width: 600px) {
-
-
 /* Smaller header */
     .header-box {
         height: 80px;
@@ -289,7 +242,6 @@ textarea {
         justify-content: center;
         font-size: 1.0rem;
     }
-
     /* On larger screns sizes nav and logos are displayed in upper left and bottom right corner. On smaller screns-sizes the are centered. Smaller font-size than on smaller screens-sizes */
     .nav-box a {
         padding: 5px;
@@ -298,82 +250,67 @@ textarea {
         align-content: space-evenly;
         height: 60px;
     }
-
     .article-box {
         font-size: 1rem;
         padding-top: 0;
     }
-
     .map-wrapper {
         padding: 20px 20px;
     }
-
     .nav-bottom {
         padding: 20px 20px;
         text-align: center;
     }
-
     /* Smaller font-size than on larger screens */
     .nav-bottom a {
         font-size: 1.2rem;
         justify-content: center;
     }
-
     .footer-box h2 {
         color: #f1efef;
         padding: 50px 50px;
         text-align: center;
     }
-
     /* Logos slightly off-center */
-    #media-logos {
+    .media-logos {
         justify-content: center;
         margin: 0 auto;
     }
-
     /* Space-evenly will allow the logos to apear more centered, entirely centered through position relative */
-    #media-logos i {
+    .media-logos i {
         justify-content: center;
         padding-bottom: 10px;
         align-content: space-evenly;
         position: relative;
         right: 3px;
     }
-
 }
-
 /* Adapted for mobile screens */
 @media screen and (max-width: 430px) {
-
     .header-box {
         height: 60px;
         margin: 0 auto;
         justify-content: center;
         font-size: 0.8rem;
     }
-
     .nav-box {
         padding: 5px;
         font-size: 1.0rem;
         height: 40px;
     }
-
     .map {
         height: 300px;
     }
-
     .nav-bottom {
         font-size: 1rem;
     }
-
     .footer-box h2 {
         color: #f1efef;
         padding: 20px 20px;
         text-align: center;
         font-size: 1.2rem;
     }
-
-    #media-logos i {
+    .media-logos i {
         font-size: 200%;
         color: #f1efef;
         padding: 10px 0 0 0;
