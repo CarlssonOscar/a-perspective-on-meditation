@@ -13,8 +13,8 @@ A Perspective On Meditation is a site which covers the benefits of meditation, h
 
 The site has two navigation bars. One at the top the pages, and one in the footer, this will enable smooth transitions between the pages needless of device. 
 
-![](/images/navigation-bar.jpg)
-![](/images/footer.jpg)
+![](assets/images/navigation-bar.jpg)
+![](assets/images/footer.jpg)
 
 ## Footer 
 
@@ -55,8 +55,8 @@ The Forth page is the Improvments page.
 * The purpose of the page it so let readers critique the content and present ideas to improve and expand the content of the site. This is done trough a form. 
 * The pages also has a map which purpose is to welcome individuals from all backgrounds to participate in the improvment of the website. 
 
-![](assets/images/form-mobile.jpg)
 ![](assets/images/map-mobile.jpg)
+![](assets/images/form-mobile.jpg)
 
 # Future Features
 
