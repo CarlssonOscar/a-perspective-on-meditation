@@ -179,6 +179,7 @@ textarea {
     width: 100%;
     box-sizing: border-box;
     display: block;
+    bottom: 0;
 }
 /* Navigation in top left corner */
 .nav-bottom {
@@ -290,7 +291,7 @@ textarea {
         padding-top: 0;
     }
     .map-wrapper {
-        padding: 20px 20px;
+        padding: 20px 0;
         box-sizing: border-box;
     }
     .nav-bottom {
@@ -338,7 +339,7 @@ textarea {
     }
     .nav-bottom a {
         font-size: 1.1rem;
-        padding: 15px;
+        padding: 30px 15px 20px 15px;
         position: relative;
         right: 40px;
     }
@@ -350,14 +351,14 @@ textarea {
     }
     .footer h2 {
         color: #f1efef;
-        padding: 30px 30px;
+        padding: 45px 45px;
         text-align: center;
         font-size: 1.2rem;
     }
     .media-logos i {
         font-size: 200%;
         color: #f1efef;
-        padding: 10px 0 0 0;
+        padding: 30px 0 0 0;
         position: relative;
         right: 45px;
     }
