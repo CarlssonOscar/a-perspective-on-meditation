@@ -7,7 +7,7 @@ html, body {
     padding: 0;
     overflow-x: hidden;
 }
-/* Ended up not using grid because of the limited time to learn it. But the site works differently without display:grid, since some of the sites elements behave as they do due to the deafult for grid is row  it won't be removed */
+/* Ended up not using grid because of the limited time to learn it. But the site works differently without display:grid, since some of the sites elements behave as they do due to the deafult for grid ehich is row, it won't be removed */
 .grid-wrapper {
     display: grid;
 }
@@ -180,7 +180,7 @@ textarea {
     display: block;
     bottom: 0;
 }
-/* Navigation in top left corner */
+/* Navigation in top left corner, position:relative left to center nav a, is not entierly centered despite justify-content: center */
 .nav-bottom {
     display: flex;
     justify-content: center;
