@@ -23,8 +23,11 @@
     </nav>
     <!-- Despite playsinline the video refuse to load on Iphone 7, tried compressing the video to 1.7mb, still does not work -->
     <section class="section">
-        <video src="assets/videos/smoke-trail.mp4" autoplay muted loop playsinline
-            poster="assets/images/smoke-trail.jpg"></video>
+        <video autoplay muted loop playsinline>
+            <source src="assets/videos/smoke-trail.mp4" type="video/mp4">
+            <source src="assets/videos/smoke-trail.ogg" type="video/ogg">
+            <source poster="assets/images/smoke-trail.jpg" type="video-screenshot">
+        </video>
     </section>
     <article class="article">
         <h2>How To Meditate</h2>
