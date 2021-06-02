@@ -7,7 +7,6 @@ html, body {
     padding: 0;
     overflow-x: hidden;
 }
-}
 /* Ended up not using grid because of the limited time to learn it. But the site works differently without display:grid, since some of the sites elements behave as they do due to the deafult for grid is row  it won't be removed */
 .grid-wrapper {
     display: grid;
@@ -267,7 +266,6 @@ textarea {
         height: 400px
     }
 }
-
 /* Adapted for common tablet width */
 @media screen and (max-width: 600px) {
 /* Smaller header */
@@ -321,7 +319,6 @@ textarea {
         padding: 10px 10px 0 10px;
         position: relative;
         right: 50px;
-
     }
 }
 /* Adapted for mobile screens */
