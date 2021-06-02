@@ -327,12 +327,15 @@ textarea {
         height: 60px;
         margin: 0 auto;
         justify-content: center;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         width: 100%;
     }
     .nav {
         height: 40px;
         padding: 5px; 
+    }
+    .nav a {
+        font-size: 0.9rem;
     }
     .nav-bottom a {
         font-size: 1.1rem;
