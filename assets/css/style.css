@@ -7,9 +7,10 @@ body {
 /* Ended up not using grid because of the limited time to learn it. But the site works differently without display:grid, since some of the sites elements behave as they do due to the deafult for grid is row  it won't be removed */
 .grid-wrapper {
     display: grid;
+    box-sizing: border-box;
 }
 /* Header centerd in middle */
-.header-box {
+.header {
     color: rgb(5, 32, 3);
     height: 120px;
     width: 100%;
@@ -20,7 +21,7 @@ body {
     font-size: 1.2rem;
 }
 /* Nav box centered in middle*/
-.nav-box {
+.nav {
     width: 100%;
     height: 80px;
     border-top: 1px solid rgb(5, 32, 3);
@@ -30,7 +31,7 @@ body {
     align-items: center;
 }
 /* Nav elements centered, removed line under links */
-.nav-box a {
+.nav a {
     color: rgb(5, 32, 3);
     padding: 20px;
     font-size: 1.4rem;
@@ -41,11 +42,11 @@ body {
     align-items: center;
 }
 /* Navigation buttons hover red */
-.nav-box a:hover {
+.nav a:hover {
     color: #b83b3d;
 }
 /* Image is centered, added padding for symmetry, works in conjuction with img and video (below) */
-.section-box {
+.section {
     max-width: 1200px;
     display: flex;
     align-items: center;
@@ -55,13 +56,13 @@ body {
     padding-top: 80px;
 }
 /* Responsive image */
-.section-box img {
+.section img {
     width: 100%;
     height: auto;
     display: block;
 }
 /* Responsive video */
-.section-box video {
+.section video {
     width: 100%;
     height: auto;
     display: block;
@@ -78,11 +79,18 @@ body {
     object-fit: cover;
     border: 10px solid #f1efef;
     display: block;
+    box-sizing: border-box;
 }
 /* Padding for symmetry */
 .form {
     margin: 0 auto;
     padding: 80px 80px;
+    max-width: 750px;
+}
+.form > * {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
 }
 /* Background color in form changed from default white, font added to ensure Didot is used through out site and margin bottom provides space between form elements */
 .form input,
@@ -90,21 +98,29 @@ textarea {
     font-family: didot, helvetica, sans-serif;
     margin-bottom: 10px;
     background-color: #45492a;
-    color: #f1efef
+    color: #f1efef;
 }
 .form textarea {
-    width: 100%;
+    border-radius: 3px;
 }
 /* Provide symmetry between forename and surname */
-.surname {
-    width: 100%;
+#fname {
+    padding: 10px;
+    border-radius: 3px;
+}
+#sname {
+    padding: 10px;
+    border-radius: 3px;
 }
 /* Padding necessary to make all form elements have the same space between each other */
 .submit {
-    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 1.2rem;
 }
 /* Width optimized for easy reading, padding for symmetry  */
-.article-box {
+.article {
     color: rgb(24, 2, 2);
     max-width: 800px;
     height: auto;
@@ -113,21 +129,21 @@ textarea {
     font-size: 1.2rem;
 }
 /* Header centered */
-.article-box h2 {
+.article h2 {
     display: flex;
     justify-content: center;
     color: rgb(24, 2, 2);
     margin-bottom: 20px;
 }
 /* Header centered */
-.article-box h3 {
+.article h3 {
     display: flex;
     justify-content: center;
     color: rgb(24, 2, 2);
     margin-bottom: 20px;
 }
 /* Provides space between paragraphs */
-.article-box p {
+.article p {
     margin-bottom: 20px;
 }
 /* Header centered */
@@ -138,6 +154,7 @@ textarea {
     justify-content: center;
     align-items: center;
     padding: 0 5% 0 5%;
+    margin-bottom: 40px;
 }
 /* Padding for symmetry on large screen-sizes */
 .map-wrapper {
@@ -148,17 +165,16 @@ textarea {
     width: 100%;
     height: 600px;
 }
-.footer-box {
+.footer {
     margin: 0 auto;
     background-color: #45492a;
-    max-height: 100%;
+    max-height: 350px;
     width: 100%;
-    box-sizing: border-box;
 }
 /* Navigation in top left corner */
 .nav-bottom {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
     padding: 20px;
@@ -175,12 +191,12 @@ textarea {
     color: #b83b3d;
 }
 /* Header centered */
-.footer-box h2 {
+.footer h2 {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-content: center;
-    align-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
     font-size: 1.6rem;
     color: #f1efef;
     padding: 35px 35px;
@@ -188,7 +204,7 @@ textarea {
 /* Media logos in bottom right corner */
 .media-logos {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-content: flex-end;
     align-items: flex-end;
     margin: 0 auto;
@@ -207,7 +223,7 @@ textarea {
 }
 /* Adpated for 13 inch laptop width */
 @media screen and (max-width: 1280px) {
-    .section-box {
+    .section {
         max-width: 780px;
         padding-top: 20px;
     }
@@ -219,7 +235,7 @@ textarea {
         width: 240px;
         height: 240px;
     }
-    .article-box {
+    .article {
         padding-top: 0;
         padding-bottom: 20px;
     }
@@ -237,21 +253,19 @@ textarea {
 /* Adapted for common tablet width */
 @media screen and (max-width: 600px) {
 /* Smaller header */
-    .header-box {
+    .header {
         height: 80px;
         margin: 0 auto;
-        justify-content: center;
         font-size: 1.0rem;
     }
     /* On larger screns sizes nav and logos are displayed in upper left and bottom right corner. On smaller screns-sizes the are centered. Smaller font-size than on smaller screens-sizes */
-    .nav-box a {
+    .nav a {
         padding: 5px;
         font-size: 1.2rem;
         text-align: center;
-        align-content: space-evenly;
         height: 60px;
     }
-    .article-box {
+    .article {
         font-size: 1rem;
         padding-top: 0;
     }
@@ -265,9 +279,8 @@ textarea {
     /* Smaller font-size than on larger screens */
     .nav-bottom a {
         font-size: 1.2rem;
-        justify-content: center;
     }
-    .footer-box h2 {
+    .footer h2 {
         color: #f1efef;
         padding: 50px 50px;
         text-align: center;
@@ -281,20 +294,19 @@ textarea {
     .media-logos i {
         justify-content: center;
         padding-bottom: 10px;
-        align-content: space-evenly;
         position: relative;
         right: 3px;
     }
 }
 /* Adapted for mobile screens */
 @media screen and (max-width: 430px) {
-    .header-box {
+    .header {
         height: 60px;
         margin: 0 auto;
         justify-content: center;
         font-size: 0.8rem;
     }
-    .nav-box {
+    .nav {
         padding: 5px;
         font-size: 1.0rem;
         height: 40px;
@@ -305,7 +317,7 @@ textarea {
     .nav-bottom {
         font-size: 1rem;
     }
-    .footer-box h2 {
+    .footer h2 {
         color: #f1efef;
         padding: 20px 20px;
         text-align: center;
