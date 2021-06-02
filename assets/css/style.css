@@ -1,13 +1,18 @@
-body {
+
+
+html, body {
     width: 100%;
     margin: 0 auto;
     background-color: #f1efef;
     font-family: didot, helvetica, sans-serif;
+    height: 100%;
+    padding: 0;
+    overflow-x: hidden;
+}
 }
 /* Ended up not using grid because of the limited time to learn it. But the site works differently without display:grid, since some of the sites elements behave as they do due to the deafult for grid is row  it won't be removed */
 .grid-wrapper {
     display: grid;
-    box-sizing: border-box;
 }
 /* Header centerd in middle */
 .header {
@@ -85,11 +90,12 @@ body {
 .form {
     margin: 0 auto;
     padding: 80px 80px;
-    max-width: 750px;
+    max-width: 900px;
 }
 .form > * {
     width: 100%;
     border: none;
+    display: block;
     box-sizing: border-box;
 }
 /* Background color in form changed from default white, font added to ensure Didot is used through out site and margin bottom provides space between form elements */
@@ -118,6 +124,7 @@ textarea {
     border-radius: 3px;
     padding: 10px;
     font-size: 1.2rem;
+    margin-top: 25px;
 }
 /* Width optimized for easy reading, padding for symmetry  */
 .article {
@@ -155,11 +162,13 @@ textarea {
     align-items: center;
     padding: 0 5% 0 5%;
     margin-bottom: 40px;
+    font-size: 1.2rem;
 }
 /* Padding for symmetry on large screen-sizes */
 .map-wrapper {
-    border: 2px solid rgb(24, 2, 2);
+    border: none;
     padding-bottom: 80px;
+    display: block;
 }
 .map {
     width: 100%;
@@ -168,8 +177,10 @@ textarea {
 .footer {
     margin: 0 auto;
     background-color: #45492a;
-    max-height: 350px;
+    max-height: 370px;
     width: 100%;
+    box-sizing: border-box;
+    display: block;
 }
 /* Navigation in top left corner */
 .nav-bottom {
@@ -177,13 +188,15 @@ textarea {
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
-    padding: 20px;
     margin: 0 auto;
+    width: 100%;
+    position: relative;
+    left: 40px;
 }
 /* Removed line under text */
 .nav-bottom a {
     color: #f1efef;
-    padding: 20px;
+    padding: 30px;
     font-size: 1.4rem;
     text-decoration: none;
 }
@@ -200,6 +213,7 @@ textarea {
     font-size: 1.6rem;
     color: #f1efef;
     padding: 35px 35px;
+    width: 100%;
 }
 /* Media logos in bottom right corner */
 .media-logos {
@@ -208,6 +222,7 @@ textarea {
     align-content: flex-end;
     align-items: flex-end;
     margin: 0 auto;
+    width: 100%;
 }
 /* Removed line under logos, displayed in row instead of column through inline */
 .media-logos li {
@@ -218,8 +233,8 @@ textarea {
 .media-logos i {
     font-size: 250%;
     color: #f1efef;
-    padding-top: 20px;
-    padding-right: 35px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 /* Adpated for 13 inch laptop width */
 @media screen and (max-width: 1280px) {
@@ -239,14 +254,17 @@ textarea {
         padding-top: 0;
         padding-bottom: 20px;
     }
+    .form {
+        padding: 20px 20px;
+    }
+    .map-header {
+        padding: 0 5% 0 5%;
+    }
     .map-wrapper {
-        padding-bottom: 40px;
+        padding: 20px 20px;
     }
     .map {
         height: 400px
-    }
-    .form {
-        padding: 20px 20px;
     }
 }
 
@@ -260,10 +278,13 @@ textarea {
     }
     /* On larger screns sizes nav and logos are displayed in upper left and bottom right corner. On smaller screns-sizes the are centered. Smaller font-size than on smaller screens-sizes */
     .nav a {
-        padding: 5px;
+        padding: 15px;
         font-size: 1.2rem;
         text-align: center;
         height: 60px;
+    }
+    .map-header {
+        font-size: 1.0rem;
     }
     .article {
         font-size: 1rem;
@@ -271,19 +292,23 @@ textarea {
     }
     .map-wrapper {
         padding: 20px 20px;
+        box-sizing: border-box;
     }
     .nav-bottom {
-        padding: 20px 20px;
         text-align: center;
     }
     /* Smaller font-size than on larger screens */
     .nav-bottom a {
         font-size: 1.2rem;
+        padding: 20px;
+        position: relative;
+        right: 30px;
     }
     .footer h2 {
         color: #f1efef;
         padding: 50px 50px;
         text-align: center;
+        box-sizing: border-box;
     }
     /* Logos slightly off-center */
     .media-logos {
@@ -293,9 +318,10 @@ textarea {
     /* Space-evenly will allow the logos to apear more centered, entirely centered through position relative */
     .media-logos i {
         justify-content: center;
-        padding-bottom: 10px;
+        padding: 10px 10px 0 10px;
         position: relative;
-        right: 3px;
+        right: 50px;
+
     }
 }
 /* Adapted for mobile screens */
@@ -305,11 +331,15 @@ textarea {
         margin: 0 auto;
         justify-content: center;
         font-size: 0.8rem;
+        width: 100%;
     }
     .nav {
-        padding: 5px;
-        font-size: 1.0rem;
         height: 40px;
+        padding: 5px; 
+    }
+    .nav-bottom a {
+        font-size: 1.1rem;
+        padding: 10px;
     }
     .map {
         height: 300px;
@@ -319,7 +349,7 @@ textarea {
     }
     .footer h2 {
         color: #f1efef;
-        padding: 20px 20px;
+        padding: 30px 30px;
         text-align: center;
         font-size: 1.2rem;
     }
@@ -328,6 +358,6 @@ textarea {
         color: #f1efef;
         padding: 10px 0 0 0;
         position: relative;
-        right: 18px;  
+        right: 50px;
     }
 }
