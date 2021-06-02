@@ -55,7 +55,7 @@ The Forth page is the Improvments page.
 * The purpose of the page it so let readers critique the content and present ideas to improve and expand the content of the site. This is done trough a form. 
 * The pages also has a map which purpose is to welcome individuals from all backgrounds to participate in the improvment of the website. 
 
-![](assets/images/map-mobile.jpg)
+![](assets/images/map-small-screen-size.jpg)
 ![](assets/images/form-mobile.jpg)
 
 # Future Features
@@ -125,20 +125,19 @@ The footer stretches on smaller screens sizes, it's som how connected to the gal
 
 # Deployment
 
-1. In the repository hompage select settings
+1. In the repository hompage on github select settings
 2. In the options field on the left  select pages
-3. In the source branch field, select master (none default)
+3. In the source branch field, select master (none is default)
 4. Optional to choose a theme (none was chosen)
-5. Make sure the Enforce HTTPS is checked
+5. Make sure the Enforce HTTPS box is checked
 6. Click save to publish
 
 # Credits
 
-
 The code which made the image on index.html and video on how.html responsive was found on [Stack Over Flow](https://stackoverflow.com/questions/42816324responsive-images-with-flex), it was later on modified to fit the site.                                                                                                                                                                  
 # Content
 
-Content was written by me and edited by two friends to ensure as few spelling and grammar mistakes as possible.
+Content was written by the author and edited by two of his friends to ensure as few spelling and grammar mistakes as possible.
 
 Social media and other logos was obtained through [Font Awesome](https://fontawesome.com/).
 
@@ -149,8 +148,6 @@ The iframe necessary for the map was obtained through [Google Maps](https://maps
 The images and video was obtained through [Pexels](https://pexels.com/).
 
 The iframe necessary for the map was obtained through [Google Maps](https://maps.google.com).
-
-
 
 # Acknowledgements 
 
