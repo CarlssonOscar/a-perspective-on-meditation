@@ -125,7 +125,12 @@ The footer stretches on smaller screens sizes, it's som how connected to the gal
 
 # Deployment
 
-...
+1. In the repository hompage select settings
+2. In the options field on the left  select pages
+3. In the source branch field, select master (none default)
+4. Optional to choose a theme (none was chosen)
+5. Make sure the Enforce HTTPS is checked
+6. Click save to publish
 
 # Credits
 
@@ -144,6 +149,8 @@ The iframe necessary for the map was obtained through [Google Maps](https://maps
 The images and video was obtained through [Pexels](https://pexels.com/).
 
 The iframe necessary for the map was obtained through [Google Maps](https://maps.google.com).
+
+
 
 # Acknowledgements 
 
