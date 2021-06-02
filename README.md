@@ -92,7 +92,7 @@ Add a membership section with a forum for readers to engage with one another abo
  
 ![](assets/images/tips.html-w3c-validaton.jpg)
 
-### improvements.html
+### feedback.html
 
 * Since the form does not have a location a # was added
 * By mistake value was written instead of for, fixed

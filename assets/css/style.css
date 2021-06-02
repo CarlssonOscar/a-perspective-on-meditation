@@ -97,7 +97,7 @@ textarea {
 }
 /* Provide symmetry between forename and surname */
 .surname {
-    padding-right: 5.5px;
+    width: 100%;
 }
 /* Padding necessary to make all form elements have the same space between each other */
 .submit {
@@ -153,6 +153,7 @@ textarea {
     background-color: #45492a;
     max-height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 /* Navigation in top left corner */
 .nav-bottom {
