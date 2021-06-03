@@ -1,14 +1,13 @@
-/* Overflow-x together with margin 0 and padding 0 removes a white space from the right side of the screen */
 html, body {
     width: 100%;
     margin: 0;
     background-color: #f1efef;
-    font-family: Quattrocento, helvetica, sans-serif;
+    font-family: "Quattrocento", helvetica, sans-serif;
     height: 100%;
     padding: 0;
-    overflow-x: hidden;
+    border: 0;
 }
-/* Ended up not using grid because of the limited time to learn it. But the site works differently without display:grid, since some of the sites elements behave as they do due to the deafult for grid ehich is row, it won't be removed */
+/* Ended up not using grid because of the limited time to learn it. But the site works differently without display:grid, since some of the sites elements behave as they do due to the deafult for grid which is row, it won't be removed */
 .grid-wrapper {
     display: grid;
 }
@@ -101,8 +100,8 @@ html, body {
 textarea {
     font-family: didot, helvetica, sans-serif;
     margin-bottom: 10px;
-    background-color: #45492a;
-    color: #f1efef;
+    background-color: white;
+    color: #45492a;
 }
 .form textarea {
     border-radius: 3px;
@@ -163,6 +162,12 @@ textarea {
     font-size: 1.2rem;
 }
 /* Padding for symmetry on large screen-sizes */
+
+.nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 .map-wrapper {
     border: none;
     padding-bottom: 80px;
@@ -180,17 +185,19 @@ textarea {
     box-sizing: border-box;
     display: block;
     bottom: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 /* Navigation in top left corner, position:relative left to center nav a, is not entierly centered despite justify-content: center */
 .nav-bottom {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex start;
     margin: 0 auto;
-    width: 100%;
-    position: relative;
-    left: 40px;
 }
 /* Removed line under text */
 .nav-bottom a {
@@ -204,38 +211,38 @@ textarea {
 }
 /* Header centered */
 .footer h2 {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     font-size: 1.6rem;
     color: #f1efef;
-    padding: 35px 35px;
+    padding: 35px 0 35px 0;
     width: 100%;
 }
-/* Media logos in bottom right corner */
 .media-logos {
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
-    align-items: flex-end;
     margin: 0 auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 /* Removed line under logos, displayed in row instead of column through inline */
 .media-logos li {
     list-style-type: none;
     display: inline;
-    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 .media-logos i {
     font-size: 250%;
     color: #f1efef;
-    padding: 30px 30px 15px 30px;
-    box-sizing: border-box;
-    position: relative;
-    right: 3px;
+    padding: 30px 40px 15px 40px;
 }
 /* Adpated for 13 inch laptop width */
 @media screen and (max-width: 1280px) {
@@ -310,12 +317,15 @@ textarea {
     .nav-bottom a {
         font-size: 1.2rem;
         padding: 20px;
-        position: relative;
-        right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: center;
+        margin: 0;
     }
     .footer h2 {
         color: #f1efef;
-        padding: 50px 50px;
+        padding: 50px 0 50px 0;
         text-align: center;
         box-sizing: border-box;
     }
@@ -323,13 +333,11 @@ textarea {
     .media-logos {
         justify-content: center;
         margin: 0 auto;
+        padding: 0;
     }
-    /* Space-evenly will allow the logos to apear more centered, entirely centered through position relative */
     .media-logos i {
         justify-content: center;
-        padding: 10px 10px 0 10px;
-        position: relative;
-        right: 50px;
+        padding: 20px;
     }
 }
 /* Adapted for mobile screens */
@@ -351,8 +359,6 @@ textarea {
     .nav-bottom a {
         font-size: 1.1rem;
         padding: 30px 10px 20px 10px;
-        position: relative;
-        right: 40px;
     }
     .map {
         height: 300px;
@@ -366,11 +372,13 @@ textarea {
         text-align: center;
         font-size: 1.2rem;
     }
+    .media-logos ul {
+        margin: 0;
+        padding: 0;
+    }
     .media-logos i {
         font-size: 200%;
         color: #f1efef;
-        padding: 20px 0 20px 0;
-        position: relative;
-        right: 45px;
+        padding: 20px;
     }
 }
