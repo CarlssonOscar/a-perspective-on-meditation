@@ -132,6 +132,8 @@ The footer stretches on smaller screens sizes, it's som how connected to the gal
 5. Make sure the Enforce HTTPS box is checked
 6. Click save to publish
 
+ Here is a link to the finished website [A Perspective On Meditation](https://carlssonoscar.github.io/a-perspective-on-meditation/)
+
 # Credits
 
 The code which made the image on index.html and video on how.html responsive was found on [Stack Over Flow](https://stackoverflow.com/questions/42816324responsive-images-with-flex), it was later on modified to fit the site.                                                                                                                                                                  
