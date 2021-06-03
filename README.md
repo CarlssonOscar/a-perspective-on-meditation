@@ -136,7 +136,7 @@ The footer stretches on smaller screens sizes, it's som how connected to the gal
 
 # Credits
 
-The code which made the image on index.html and video on how.html responsive was found on [Stack Over Flow](https://stackoverflow.com/questions/42816324responsive-images-with-flex), it was later on modified to fit the site.                                                                                                                                                                  
+The code which made the image on index.html and video on how.html responsive was found on [Stack Over Flow](https://stackoverflow.com/questions/42816324/responsive-images-with-flex), it was later on modified to fit the site.                                                                                                                                                                  
 # Content
 
 Content was written by the author and edited by two of his friends to ensure as few spelling and grammar mistakes as possible.
