@@ -153,7 +153,7 @@ The footer stretches on smaller screens sizes, it's som how connected to the gal
 
 The code which made the image on index.html and video on how.html responsive was found on [Stack Overflow](https://stackoverflow.com/questions/42816324/responsive-images-with-flex), it was later on modified to fit the site.      
 
-The code for the footer media-logos was borrowed from the [Love Running](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/e6d4cda2bc08458ba94d2092be9bad3a/) Code Institute project.
+The code for the footer media-logos was borrowed from the [Love Running](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/e6d4cda2bc08458ba94d2092be9bad3a/) Code Institute project, it was later on modified to fit the site.
 
 # Content
 
