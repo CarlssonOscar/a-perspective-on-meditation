@@ -91,6 +91,7 @@ html, body {
     margin: 0 auto;
     padding: 80px 80px;
     max-width: 900px;
+    padding: 0;
 }
 .form > * {
     width: 100%;
