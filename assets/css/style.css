@@ -351,10 +351,11 @@ textarea {
     }
     .nav {
         height: 40px;
-        padding: 5px; 
+        padding: 0; 
     }
     .nav a {
         font-size: 0.9rem;
+        padding: 5px;
     }
     .nav-bottom a {
         font-size: 1.1rem;
