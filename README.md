@@ -169,6 +169,12 @@ The images and video was obtained through [Pexels](https://pexels.com/).
 
 The iframe necessary for the map was obtained through [Google Maps](https://maps.google.com).
 
+# Tools
+
+[Visual Studio Code](https://code.visualstudio.com/) was used to write the majority of the README file.
+
+ [Balsamiq](https://balsamiq.com/) was used to make the wireframes.
+
 # Acknowledgements 
 
 [Code Institute](https://codeinstitute.net) for providing excellent course material.
