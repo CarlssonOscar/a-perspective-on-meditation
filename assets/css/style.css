@@ -209,7 +209,7 @@ textarea {
 .nav-bottom a:hover {
     color: #b83b3d;
 }
-/* Header centered */
+/* Header centered, padding left 0 ensures default padding for header is removed*/
 .footer h2 {
     margin: 0;
     display: flex;
@@ -231,7 +231,7 @@ textarea {
     padding: 0;
     margin: 0;
 }
-/* Removed line under logos, displayed in row instead of column through inline */
+/* Removed line under logos, displayed in row instead of column through inline, padding left 0 removes default padding for lists */
 .media-logos li {
     list-style-type: none;
     display: inline;
@@ -243,6 +243,9 @@ textarea {
     font-size: 250%;
     color: #f1efef;
     padding: 30px 40px 15px 40px;
+}
+.media-logos i:hover {
+    color: #b83b3d;
 }
 /* Adpated for 13 inch laptop width */
 @media screen and (max-width: 1280px) {
