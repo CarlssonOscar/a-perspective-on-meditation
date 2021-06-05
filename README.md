@@ -113,11 +113,7 @@ Add a membership section with a forum for readers to engage with one another abo
 
 ### feedback.html
 
-* Since the form does not have a location a # was added
-* By mistake value was written instead of for, fixed
-* Stray script tag was removed
-
-![](assets/images/improvements.html-w3c-validaton.jpg)
+![](assets/images/feedback.html-w3c-validator.jpg)
 
 ## CSS
 
