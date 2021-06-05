@@ -4,6 +4,25 @@ A Perspective On Meditation is a site which covers the benefits of meditation, h
  
 ![](assets/images/readme-front-page.jpg)
 
+# Wireframes
+
+## index.html
+
+![](assets/images/why-balsamiq.jpg)
+
+## how.html
+
+![](assets/images/how-balsamiq1.jpg)
+![](assets/images/how-balsamiq2.jpg))
+
+## tips.html
+
+![](assets/images/tips-balsamiq.jpg)
+
+## feedback.html
+
+![](assets/images/feedback-balsamiq.jpg)
+
 # Existing Features
 
 * The site has an easy to understand non-distracting layout needless of device.
@@ -121,7 +140,7 @@ Add a membership section with a forum for readers to engage with one another abo
 
 Flexbox refused to accept bottom of footer, insted flex-end ended up in the middle of the footer due to the other content in the footer above it. The issue was fixed through padding, there is likly better options available that the author was not able to figure out during the projects timeline.
 
-The footer stretches on smaller screens sizes, it's som how connected to the gallery and the pictures realigning with the flex-wrap: reverse-wrap command. Without the added padding there is a white space under the footer.
+The footer stretches on smaller screens sizes, it's som how connected to the gallery and the gallery realigning with the flex-wrap: reverse-wrap command. Without the added padding there is a white space under the footer.
 
 # Deployment
 
@@ -136,7 +155,10 @@ The footer stretches on smaller screens sizes, it's som how connected to the gal
 
 # Credits
 
-The code which made the image on index.html and video on how.html responsive was found on [Stack Overflow](https://stackoverflow.com/questions/42816324/responsive-images-with-flex), it was later on modified to fit the site.                                                                                                                                                                  
+The code which made the image on index.html and video on how.html responsive was found on [Stack Overflow](https://stackoverflow.com/questions/42816324/responsive-images-with-flex), it was later on modified to fit the site.      
+
+The code for the footer media-logos was borrowed from the [Love Running](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/e6d4cda2bc08458ba94d2092be9bad3a/) Code Institute project.
+
 # Content
 
 Content was written by the author and edited by two of his friends to ensure as few spelling and grammar mistakes as possible.
